@@ -1,14 +1,15 @@
-import { render, fireEvent } from 'solid-testing-library';
+import { render } from 'solid-testing-library';
 import App from '../App';
+import { Router } from '@solidjs/router';
 
 
 describe('test', () => {
     it('renders', () => {
         const { getByText, unmount} = render(() => {
-            return <App />;
+            return <Router><App /></Router>;
         })
 
-        expect(getByText('Learn Solid')).toBeVisible()
+        expect(getByText('Head to Head')).toBeVisible()
         unmount()
     })
 
