@@ -2,9 +2,9 @@ import type { Component } from 'solid-js';
 
 const App: Component = () => {
   return (
-    <div>
-          Learn Solid
-    </div>
+    <>
+      <h1>Learn Solid</h1>
+    </>
   );
 };
 

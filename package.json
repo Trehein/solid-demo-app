@@ -15,7 +15,10 @@
     "setupFilesAfterEnv": [
       "<rootDir>/jest-setup.ts"
     ],
-    "testPathIgnorePatterns": ["<rootDir>/node_modules/", "<rootDir>/e2e/"]
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/e2e/"
+    ]
   },
   "license": "MIT",
   "devDependencies": {
@@ -40,6 +43,7 @@
     "vite-plugin-solid": "^2.5.0"
   },
   "dependencies": {
+    "@solidjs/router": "^0.8.2",
     "solid-js": "^1.6.10",
     "ts-node": "^10.9.1"
   }
