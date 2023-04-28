@@ -1,13 +1,13 @@
 import type { Component } from 'solid-js';
 import { pageStyles } from './pageStyles';
 
-const HeadToHeadPage: Component = () => {
+const HomePage: Component = () => {
     const pageClasses = pageStyles()
     return (
         <div style={pageClasses.pageContainer}>
-            HeadToHeadPage
+
         </div>
     )
 }
 
-export default HeadToHeadPage
+export default HomePage

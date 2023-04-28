@@ -1,14 +1,13 @@
 import { render } from 'solid-testing-library';
-import App from '../App';
-import { Router } from '@solidjs/router';
+import HeadToHeadPage from '../HeadToHeadPage';
 
 describe('test', () => {
     it('renders', () => {
         const { getByText, unmount} = render(() => {
-            return <Router><App /></Router>;
+            return <HeadToHeadPage />;
         })
 
-        expect(getByText('Head to Head')).toBeVisible()
+        expect(getByText('HeadToHeadPage')).toBeVisible()
         unmount()
     })
 
